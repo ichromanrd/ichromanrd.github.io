@@ -99,8 +99,9 @@ listOfNumbers.associateWith {
 //	(2, "Value of 2")
 //	(3, "Value of 3")
 
-So cool, right?
 ```
+
+So cool, right?
 
 ## Spring x Kotlin = Cool!
 
