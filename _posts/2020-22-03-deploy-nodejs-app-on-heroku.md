@@ -83,7 +83,7 @@ Do not create `.gitignore` file and add the node_modules entry otherwise it will
 
 ```bash
 $ git add . && git commit -a -m 'initial commit' && git push heroku master
-``
+```
 
 Heroku will build the app. You can verify the build by,
 
