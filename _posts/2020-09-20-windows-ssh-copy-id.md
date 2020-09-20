@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows's ssh-copy-id"
+title: "Windows' ssh-copy-id"
 date: 2020-09-20 10:15:00 +8
 comments: true
 categories:
@@ -26,7 +26,7 @@ But it doesn't work.
 Hmm, do some googling and I found this [reference](https://www.chrisjhart.com/Windows-10-ssh-copy-id/#:~:text=At%20the%20moment%2C%20Windows%2010's,Linux%20device%20for%20passwordless%20login.). So we just need to use this command:
 
 ```poweshell
-PS C:\Users\IDICRAD\.ssh> type .\id_rsa.pub | ssh 
+PS C:\Users\IDICRAD\.ssh> type .\id_rsa.pub | ssh pompom@localhost -p 22100 "cat >> /home/pompom/.ssh/authorized_keys"
 ```
 
 There is one more error.
