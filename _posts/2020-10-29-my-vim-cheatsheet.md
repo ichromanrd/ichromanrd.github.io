@@ -11,6 +11,13 @@ I am trying to empower Vim as my primary IDE. But I am not gonna jump straight i
 
 So in this post I will make my own Vim Cheatsheet. Let's go.
 
+## Modes
+
+Esc: Exit from current mode to normal mode<br>
+i: Enter insert mode<br>
+v: Enter visual mode <br>
+V: Enter visual mode with current cursor's line selected <br>
+
 ## .vimrc 
 
 Here is my `.vimrc` file default setup. These commands are very useful when writing code.
@@ -40,48 +47,59 @@ set showmatch
 
 ## Find string
 
-/<search pattern>
+/{search pattern}
 
 ## Find string and replace in the current file
 
-:%s/<search pattern/<replacement>/g
+:%s/{search pattern}/{replacement}/g <br>
 
 'g' means find from the beginning to the end of file.
-
-## Visual mode
-
-In visual mode we can select multiple lines.
-
-v: Enter visual mode
-V: Enter visual mode with current cursor's line selected
 
 ## Copy, Cut, Delete, Paste
 
 yy, Y: Copy the current entire line the including newline character at the end of the line<br/>
 y: Copy selected area/lines in visual mode <br/>
-yiw: Copy current word excluding surrounding spaces
-yaw: Copy current word including surrounding spaces
-yt(x): Copy from current cursor position until before (x) character
-yf(x): COpy from current cursor position until (x) character included
-x: Delete character above the cursor
+yiw: Copy current word excluding surrounding spaces<br>
+yaw: Copy current word including surrounding spaces<br>
+yt(x): Copy from current cursor position until before (x) character<br>
+yf(x): COpy from current cursor position until (x) character included<br>
+x: Delete character above the cursor<br>
 d: Cut or delete selected area/lines in visual mode <br/>
-dd: Cut/delete the entire line
-dw: Delete the word with trailing blank space. If put in the middle of word, will delete the rest of the word with followed trailing space
-P: Paste before cursor
-p: Paste after cursor
+dd: Cut/delete the entire line<br>
+dw: Delete the word with trailing blank space. If put in the middle of word, will delete the rest of the word with followed trailing space<br>
+P: Paste before cursor<br>
+p: Paste after cursor<br>
 
 # Navigation / Go To
 
-0, ^: The beginning of line
-$: The end of line
-A: The end of line with insert mode
-w, W: Move cursor right 1 word
-b, B: Move cursor left 1 word
-H: Move to the top of the screen
-M: Move to the middle of the screen
-L: Move to the bottom of the screen
-gg: The beginning of file
-G: The end of file
+0, ^: The beginning of line<br>
+$: The end of line<br>
+A: The end of line with insert mode<br>
+w, W: Move cursor right 1 word<br>
+b, B: Move cursor left 1 word<br>
+H: Move to the top of the screen<br>
+M: Move to the middle of the screen<br>
+L: Move to the bottom of the screen<br>
+gg: The beginning of file<br>
+G: The end of file<br>
+
+## Undo and Redo
+
+u: Undo<br>
+CTRL+r: Redo<br>
+
+## Save and Exit
+
+:w : Save
+:q : Exit
+:wq : Save and exit
+:q! : Exit without saving
+
+## Misc
+
+:help (command): Show usage of (command)<br>
+:helpclose: Close help page
+
 
 ## Happy Vim-ing!
 
