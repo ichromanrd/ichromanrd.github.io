@@ -90,10 +90,10 @@ CTRL+r: Redo<br>
 
 ## Save and Exit
 
-:w : Save
-:q : Exit
-:wq : Save and exit
-:q! : Exit without saving
+:w : Save<br>
+:q : Exit<br>
+:wq : Save and exit<br>
+:q! : Exit without saving<br>
 
 ## Misc
 
